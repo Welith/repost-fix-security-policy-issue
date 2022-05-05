@@ -10,7 +10,7 @@ if defined?(Rails) && defined?(ActiveSupport)
           params: params,
           options: options.merge({
             authenticity_token: authenticity_token,
-            autosubmit_nonce: content_security_policy_nonce,
+            #autosubmit_nonce: content_security_policy_nonce,
           }.compact)
         ).html_safe, status: status
       end
